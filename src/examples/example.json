@@ -1,0 +1,77 @@
+{
+  "basics": {
+    "name": "Priya Shah",
+    "label": "Product Manager",
+    "email": "priya.shah@example.com",
+    "phone": "07700 900456",
+    "url": "",
+    "summary": "Product manager with seven years in consumer and public-sector services. I like small teams, short feedback loops and products people actually finish using. Most recently led the rebuild of a council's online payments, now used by 180,000 households.",
+    "location": { "city": "Bristol", "region": "UK" },
+    "profiles": [
+      { "network": "LinkedIn", "username": "priyashah-example", "url": "https://www.linkedin.com/in/priyashah-example" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Harbourside Digital",
+      "position": "Senior Product Manager",
+      "location": "Bristol",
+      "startDate": "2022-04",
+      "highlights": [
+        "Led a team of 9 rebuilding a city council's online payments service, raising completion from 61% to 88% in six months.",
+        "Introduced fortnightly research sessions with residents, which shaped 14 of the 20 most-used changes.",
+        "Responsible for the product roadmap and quarterly planning with council stakeholders."
+      ]
+    },
+    {
+      "name": "Fernleaf",
+      "position": "Product Manager",
+      "location": "London",
+      "startDate": "2019-01",
+      "endDate": "2022-03",
+      "highlights": [
+        "Launched subscription pausing, cutting monthly cancellations by 23%.",
+        "Ran 40+ A/B tests on onboarding and wrote the team's experiment playbook.",
+        "Worked with finance to model pricing changes worth £1.2m a year."
+      ]
+    },
+    {
+      "name": "Fernleaf",
+      "position": "Associate Product Manager",
+      "location": "London",
+      "startDate": "2017-09",
+      "endDate": "2018-12",
+      "highlights": [
+        "Owned the help centre and in-app support, answering 3,000 customer questions a month.",
+        "Built the first dashboard of support themes in Looker, now used across the company."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Bath",
+      "studyType": "BSc",
+      "area": "Economics",
+      "score": "2:1",
+      "startDate": "2014-09",
+      "endDate": "2017-06"
+    }
+  ],
+  "skills": [
+    { "name": "Product", "keywords": ["Discovery", "Roadmapping", "User research", "A/B testing", "Prioritisation"] },
+    { "name": "Tools", "keywords": ["Jira", "Figma", "Looker", "SQL", "Amplitude"] }
+  ],
+  "certificates": [
+    { "name": "Certified Scrum Product Owner", "issuer": "Scrum Alliance", "date": "2020-05" }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Native" },
+    { "language": "Gujarati", "fluency": "Fluent" },
+    { "language": "Spanish", "fluency": "Conversational" }
+  ],
+  "interests": [
+    { "name": "Open-water swimming" },
+    { "name": "Community radio" },
+    { "name": "Allotment growing" }
+  ]
+}

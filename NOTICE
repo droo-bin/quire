@@ -1,0 +1,23 @@
+Quire
+Copyright 2026 The Quire contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+It is provided "as is", without warranty of any kind. Its imports, checks, job matching
+and language-model suggestions can be wrong; read your CV before you send it.
+
+It includes the following third-party software and fonts, each under its own licence
+(licence files sit beside each in src/vendor/):
+
+- pdf.js 6.2.108 (legacy build), Apache License 2.0, Copyright Mozilla Foundation.
+  https://github.com/mozilla/pdf.js
+- wllama 2.4.0, MIT License, Copyright Xuan Son Nguyen, bundling llama.cpp (MIT License,
+  Copyright The ggml authors). https://github.com/ngxson/wllama
+- Instrument Sans, SIL Open Font License 1.1, Copyright The Instrument Sans Project Authors.
+- Work Sans, SIL Open Font License 1.1, Copyright The Work Sans Project Authors.
+- Lora, SIL Open Font License 1.1, Copyright The Lora Project Authors.
+- IBM Plex Serif, SIL Open Font License 1.1, Copyright IBM Corp.
+- Carlito, SIL Open Font License 1.1, Copyright tyPoland Lukasz Dziedzic.
+- Caladea, SIL Open Font License 1.1, Copyright The Caladea Project Authors (Huerta Tipográfica).
+
+The optional language models (Qwen2.5 Instruct, Apache License 2.0, by the Qwen team at
+Alibaba Cloud) are not included; they download from Hugging Face only if you choose to.

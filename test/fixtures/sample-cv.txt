@@ -1,0 +1,48 @@
+SAM TAYLOR
+Senior Data Engineer
+Leeds, UK | sam.taylor@example.com | 07700 900123 | linkedin.com/in/samtaylor-example | github.com/samtaylor
+
+PROFILE
+Data engineer with eight years building pipelines and analytics platforms for retail and public sector teams. Happiest
+turning messy data into something people trust.
+
+WORK EXPERIENCE
+Senior Data Engineer, Northwind Retail Ltd
+March 2021 – Present
+• Led the move of 40 nightly batch jobs to streaming pipelines, cutting report latency from 24 hours to 15
+minutes.
+• Mentored four engineers and introduced code review guidelines.
+• Responsible for the data quality checks.
+
+Data Engineer | Leeds City Council | Jun 2017 - Feb 2021
+- Built a data warehouse for housing repairs used by 300 staff.
+- Automated monthly returns to central government, saving 6 days a month.
+
+Analyst at Example Insights
+2015 – 2017
+Worked on dashboards for clients.
+
+EDUCATION
+BSc Mathematics, University of York, 2012 – 2015
+First Class Honours
+
+A Levels: Maths, Physics, Chemistry (A*AA)
+Leeds Grammar School, 2010 - 2012
+
+SKILLS
+Languages: Python, SQL, Scala
+Tools: Airflow, Spark, dbt, Kafka, PostgreSQL
+Communication, mentoring, stakeholder management
+
+CERTIFICATIONS
+AWS Certified Data Engineer – Amazon Web Services (2023)
+Google Professional Data Engineer, 2021
+
+LANGUAGES
+English (native), French (conversational)
+
+INTERESTS
+Fell running, baking, chess
+
+REFERENCES
+Available on request

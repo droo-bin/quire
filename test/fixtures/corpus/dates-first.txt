@@ -1,0 +1,30 @@
+Priya Natarajan
+priya.n@example.org
++44 7700 900111
+Bristol
+
+Experience
+
+2019 - Present    Senior Data Analyst, Example Health Trust, Bristol
+Built the trust's first waiting-list forecast.
+- Cut weekly reporting from two days to an hour.
+- Trained 20 staff in SQL.
+
+2016 - 2019    Data Analyst at Sample Insights Ltd
+- Owned the monthly sales dashboard.
+
+Qualifications
+MSc Data Science
+University of Bath
+2015 - 2016
+BSc Mathematics, University of Exeter, 2012 - 2015, First Class Honours
+
+Programming Languages
+Python
+R
+SQL
+JavaScript
+
+Certifications
+AWS Certified Cloud Practitioner - Amazon Web Services - 2022
+Tableau Desktop Specialist (Tableau) 2021

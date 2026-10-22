@@ -1,0 +1,35 @@
+ALEX KOWALSKI
+Senior Mechanical Engineer · Chartered (IMechE)
+alex.kowalski@example.net · 07700 900333 · www.alexk.example.com · Derby
+
+Mechanical engineer with twelve years in rail and aerospace, most recently leading design teams on bogie systems for new trains.
+
+CAREER
+SENIOR MECHANICAL ENGINEER – EXAMPLE RAIL SYSTEMS – DERBY – 2019 TO NOW
+- Lead a team of 5 engineers designing bogie frames.
+- Took a new suspension design from concept to type approval.
+
+Mechanical Engineer, Sample Aero plc (Bristol)    Sep 2014 – Jun 2019
+- Stress analysis of wing components in ANSYS.
+
+Graduate Engineer
+Sample Aero plc
+2012 – 2014
+
+VOLUNTEERING
+STEM Ambassador, Example Science Centre, 2016 – present
+- Run monthly workshops for local schools.
+
+PROJECTS
+Electric go-kart (2021) – github.com/alexk/go-kart
+Built a 4 kW electric go-kart with my children.
+
+EDUCATION
+MEng Mechanical Engineering (First), Example University (2007–2012)
+
+SKILLS
+Proficient in: SolidWorks, ANSYS, MATLAB
+Familiar with: Python, LabVIEW
+
+CERTIFICATIONS
+Chartered Engineer (CEng), IMechE, 2018

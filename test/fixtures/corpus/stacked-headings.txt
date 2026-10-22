@@ -1,0 +1,28 @@
+Tom Reyes
+Software Engineer | tom@example.dev | github.com/tomreyes
+
+Summary
+I build backend services.
+
+Employment
+Software Engineer
+Acme Payments Ltd, London
+June 2020 - Present
+Key achievements:
+- Moved card processing to a new queue, cutting failures by 30%.
+- Mentored two graduates.
+
+Junior Developer
+Brightside Studio
+Sept 2018 - May 2020
+Built client websites in PHP and Vue.
+
+Technical Skills
+• Go, Python, TypeScript
+• PostgreSQL, Redis
+• Docker, Kubernetes, Terraform
+
+Education
+BSc (Hons) Computer Science
+Example University, 2015 – 2018
+Grade: 2:1

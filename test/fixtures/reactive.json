@@ -1,0 +1,74 @@
+{
+  "basics": {
+    "name": "Casey Lin",
+    "headline": "Marketing Manager",
+    "email": "casey@example.com",
+    "phone": "",
+    "location": "Brighton",
+    "url": {
+      "href": "https://caseylin.example",
+      "label": ""
+    },
+    "picture": {
+      "url": ""
+    }
+  },
+  "sections": {
+    "summary": {
+      "content": "<p>Marketer with a soft spot for <strong>email</strong>.</p>"
+    },
+    "experience": {
+      "items": [
+        {
+          "visible": true,
+          "company": "Seagull Media",
+          "position": "Marketing Manager",
+          "location": "Brighton",
+          "date": "Jan 2020 - Present",
+          "summary": "<ul><li>Grew the newsletter to 40,000 readers.</li><li>Ran a team of three.</li></ul>",
+          "url": {
+            "href": ""
+          }
+        }
+      ]
+    },
+    "education": {
+      "items": [
+        {
+          "visible": true,
+          "institution": "University of Sussex",
+          "studyType": "BA",
+          "area": "English",
+          "score": "",
+          "date": "2014 - 2017",
+          "summary": ""
+        }
+      ]
+    },
+    "skills": {
+      "items": [
+        {
+          "visible": true,
+          "name": "Email marketing",
+          "description": "Advanced",
+          "keywords": [
+            "Mailchimp",
+            "Klaviyo"
+          ]
+        }
+      ]
+    },
+    "profiles": {
+      "items": [
+        {
+          "visible": true,
+          "network": "LinkedIn",
+          "username": "caseylin",
+          "url": {
+            "href": "https://linkedin.com/in/caseylin"
+          }
+        }
+      ]
+    }
+  }
+}

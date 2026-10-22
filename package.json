@@ -1,0 +1,13 @@
+{
+  "name": "quire",
+  "version": "0.1.0",
+  "description": "A private CV builder: import, write, check, match to a job and download a real PDF, all in the browser.",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "python3 -m http.server 8010 --directory dist",
+    "test": "node scripts/build.mjs && node --test test/*.test.mjs && python3 -m unittest discover -s test -p \"test_*.py\""
+  }
+}

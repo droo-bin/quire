@@ -1,0 +1,102 @@
+name: Build and publish
+
+# Every push and pull request: build, then run the unit tests and the browser tests.
+# Pushes to main: publish the app to GitHub Pages (droo-bin.github.io/quire/).
+# Tags like v1.0.0: also attach a zip of the built app to a GitHub release.
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install browser test tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Build
+        run: node scripts/build.mjs
+
+      - name: Unit tests (dates, CV reading, checks, job matching, PDF writer)
+        run: node --test test/*.test.mjs
+
+      - name: Browser tests (editing, templates, importing, exporting, phone, offline)
+        working-directory: test
+        run: python -m unittest test_app test_corpus -v
+
+      - name: Zip the built app
+        run: cd dist && zip -qr ../quire.zip .
+
+      - name: Upload built app
+        uses: actions/upload-artifact@v4
+        with:
+          name: quire
+          path: quire.zip
+
+      - name: Upload Pages site
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Publish to GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  release:
+    name: Attach the built app to the release
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: quire
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha256sum quire.zip > quire.zip.sha256
+          gh release create "$GITHUB_REF_NAME" quire.zip quire.zip.sha256 \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Quire $GITHUB_REF_NAME" \
+            --notes "Unzip quire.zip and serve the folder over http (for example: python3 -m http.server) to run Quire on your own machine. The .sha256 file lets you check the download is genuine."

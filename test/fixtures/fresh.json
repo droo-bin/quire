@@ -1,0 +1,68 @@
+{
+  "name": "Robin Hart",
+  "meta": {
+    "format": "FRESH@0.6.0"
+  },
+  "info": {
+    "label": "Data Analyst",
+    "brief": "Analyst who explains numbers plainly."
+  },
+  "contact": {
+    "email": "robin@example.com",
+    "phone": "01632 960123",
+    "website": "https://robinhart.example"
+  },
+  "location": {
+    "city": "York",
+    "country": "UK"
+  },
+  "employment": {
+    "history": [
+      {
+        "employer": "Minster Insight",
+        "position": "Data Analyst",
+        "start": "2021-06",
+        "highlights": [
+          "Built weekly sales reporting in Power BI."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "history": [
+      {
+        "institution": "University of Leeds",
+        "area": "Statistics",
+        "studyType": "BSc",
+        "start": "2017",
+        "end": "2020",
+        "grade": "2:1"
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Analysis",
+        "skills": [
+          "SQL",
+          "Python",
+          "Power BI"
+        ]
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "French",
+      "level": "Conversational"
+    }
+  ],
+  "social": [
+    {
+      "network": "GitHub",
+      "user": "robinhart",
+      "url": "https://github.com/robinhart"
+    }
+  ]
+}

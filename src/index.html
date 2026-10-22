@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+  Quire: a CV builder that runs entirely in your browser. Nothing you type leaves this device.
+  Copyright 2026 The Quire contributors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data: https://huggingface.co https://*.huggingface.co https://*.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cas-bridge.xethub.hf.co; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Quire: a private CV builder</title>
+<meta name="description" content="Build, improve and download your CV in your browser. Import a PDF, Word file, JSON Resume or LinkedIn export, pick a template, check the writing, match it to a job and download a real PDF. No account, no uploads, works offline.">
+<meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121315" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="render/cv.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="app" class="view-home">
+  <header class="bar">
+    <a class="brand" id="brand" href="./" aria-label="Quire: all your CVs">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3" width="17" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="2.2" opacity=".45"/><rect x="5" y="7" width="17" height="22" rx="2" fill="var(--panel)" stroke="currentColor" stroke-width="2.4"/><path d="M9.5 13h8M9.5 17.5h8M9.5 22h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span>Quire</span>
+    </a>
+    <div class="bar-doc" id="bar-doc"></div>
+    <div class="bar-actions" id="bar-actions"></div>
+  </header>
+  <main id="main" tabindex="-1">
+    <noscript><p class="noscript">Quire needs JavaScript to run. It runs entirely in your browser and sends nothing anywhere.</p></noscript>
+  </main>
+</div>
+<div id="print-root" class="print-root" aria-hidden="true"></div>
+<div class="drop-overlay" aria-hidden="true"><p>Drop your CV to import it</p></div>
+</body>
+</html>
